@@ -1,6 +1,7 @@
 # Acta 1 sesión 1 : Creación de los primeros Logs
 ### Información de la reunión:
 **Fecha:**  12/04/2022
+
 **Hora:**  17:00 h
 **Identificador del grupo:** 3ti21_G2
 **Tipo de reunión:** Online
