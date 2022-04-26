@@ -3,11 +3,17 @@
 **Fecha:**  12/04/2022
 
 **Hora:**  17:00 h
+
 **Identificador del grupo:** 3ti21_G2
+
 **Tipo de reunión:** Online
+
 **Plataforma:** Discord
+
 **Asistentes:**
+
 Sales García, Gabriel
+
 Pompilio, Matteo
 ### 1. Resumen de la reunión:
 Hemos creado un proyecto web dinámico en el cual se han creados 2 Servelts (Log0, Log1), donde Log1 está basado en evoluciónes de las funcionalidades de Log0: para cada Servlet vamos a mostrar como hemos resuelto el problema requerido.
