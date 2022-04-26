@@ -86,7 +86,7 @@ Este codigo será el mismo para los 2 siguientes Servlets Log1 y Log2:
 ```
 ### 5. Objetivos para la próxima reunión:
 **Las tareas a preparar para la siguiente sesión son:**
-- estudio del funcionamento del fichero *web.xml*
-- indrodución a los tags que permiten de crear variables de contexto
+- Estudio del funcionamento del fichero *web.xml*
+- Indrodución a los tags que permiten de crear variables de contexto
 
 *Valencia, 13/04/2022, Matteo Pompilio*
