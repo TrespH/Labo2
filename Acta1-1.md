@@ -49,15 +49,15 @@ try {
   File myObj = new File(path);
   myObj.createNewFile();
   String res = fechaHora + " " + user + " " + request.getLocalAddr() + " " + URI + " acceso " + request.getMethod() + "\n";
-    FileWriter textFile = new FileWriter(myObj, true);
-    textFile.append(res); 
-    textFile.close();
+  FileWriter textFile = new FileWriter(myObj, true);
+  textFile.append(res); 
+  textFile.close();
 } catch (IOException e) {
   out.println("Un error ha occurrido.");
   e.printStackTrace();
 }
 ```
-Donde la variable *path* se obtene añadendo el nombre del file a la ruta del mismo: ```this.getServletContext().getRealPath("/")```
+Donde  el segundo argumento de *FileWriter()* se pone ```true``` para activar la modalitá *apend*, y donde la variable *path* se obtene añadendo el nombre del file a la ruta del mismo: ```this.getServletContext().getRealPath("/")```
 ### 4. La pagina de index
 Aqí se muestra el codigo, muy sencillo, de los forms del Servlet Log0, que permiten de invocar ambos los métodos GET y POST.
 Este codigo será el mismo para los 2 siguientes Servlets Log1 y Log2:
