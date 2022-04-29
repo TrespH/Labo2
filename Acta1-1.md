@@ -47,17 +47,13 @@ Se han importados las librerías *java.io.File* y *java.io.FileWriter* para la c
 ```java
 try {
   File myObj = new File(path);
-  if (myObj.createNewFile()) {
-    System.out.println("File created: " + myObj.getName());
-    FileWriter textFile = new FileWriter(myObj);
-    String res = path + "\n" + fechaHora + "\n" + user + "\n" + password + "\n" + URI;
-    textFile.write(res);
+  myObj.createNewFile();
+  String res = fechaHora + " " + user + " " + request.getLocalAddr() + " " + URI + " acceso " + request.getMethod() + "\n";
+    FileWriter textFile = new FileWriter(myObj, true);
+    textFile.append(res); 
     textFile.close();
-  } else {
-    System.out.println("File already exists.");
-  }
 } catch (IOException e) {
-  System.out.println("An error occurred.");
+  out.println("Un error ha occurrido.");
   e.printStackTrace();
 }
 ```
