@@ -1,4 +1,4 @@
-# Acta #1 sesión 1 : Hito 2.
+# Acta 1 sesión 2 : Log2 y primeras dudas.
 ### Información de la reunión:
 **Fecha:**  21/04/2022
 **Hora:**  17:30 h
@@ -10,35 +10,25 @@ Sales García, Gabrielh
 Malerba, Alessio
 Pompilio, Matteo
 ### 1. Resumen de la reunión:
-Hemos continuado con las partes restantes de la sesión 1. Habiendo completado ya Log0 y Log1, implementamos una versión para Log2. Para esto, configuramos la ruta del archivo "PrimeroMP" colocándolo en la sección context-param añadida dentro del archivo "web.xml", utilizando las etiquetas param-name y param-value. Aquì está el código añadido:
+Hemos continuado con las partes restantes de la sesión 1. Habiendo completado ya Log0 y Log1, hemos implementado una versión para Log2. El trabajo prosiguió sin obstáculos, pero luego tuvimos un pequeño problema con las partes restantes, a saber, Log3 y los comandos curl de prueba. 
+
+### 2. Desarollo de Log2:
+Para esto, hemos configurado la ruta del archivo "PrimeroMP" colocándolo en la sección context-param añadida dentro del archivo "web.xml", utilizando las etiquetas param-name y param-value. Aquì está el código añadido:
 
     <context-param>
         <param-name>Path</param-name>
         <param-value>/home/user/apache-tomcat-9.0.62/webapps/primeroMP/</param-value>
     </context-param>
   
-Por otro lado, Log3 fue el que nos detuvo, ya que no pudimos entender bien qué significaba convertir un servlet en un filtro. Además, nuestro desconocimiento del comando curl, que también se utilizaba en Log2, nos hizo suspender la ruina más adelante.
+### 3. Dudas sobre Log3:
+Log3 fue el que nos detuvo, ya que no pudimos entender bien qué significaba convertir un servlet en un filtro. Por eso hemos decidido de enviar un correo al profe explicando directamente nuestras dudas, ya que es posible que el trabajo sólo deba realizarse en el futuro con conocimientos que aún no poseemos
 
-### 2. Aspectos fundamentales para el trabajo en equipo:
-- **Medios de contacto:** Aplicación *"Whattsap"* para organizar las reuniones y comunicación rápida. Las reuniones se desarrolaran vía *"Microsoft Teams"*.
-- **Horario de las reuniones:** Horario de laboratorio (Lunes-17:00 h / 18:30) y domingos entre (17:00h - 20:00h).
-- **Déposito de material:** De momento almacenaremos todo el trabajo en una carpeta en un drive compartido. Hemos hablaco la posibilidad de crear un github para poder compartir todo más sencillo.
-- **Reglas a cumplir:**    
-    1. Respeto entre los integrantes del grupo.
-    2. Compromiso con el trabajo en equipo, es decir realizar el trabajo necesario, conectarsese a las reuniones ...
-    3. Compromiso a hacer un trabajo de calidad.
-    
-- **Motivos de expulsion del tgrabajo de equipo:** No cum plir con las reglas descritas anteriormente.
-- **Expectativas del proyecto**: Hemos estado debatiendo que es lo que esperamos conseguir con este trabajo, tanto a nivel académico como personal. Hemos llegado a una conclusión similar: Aspirar a una nota notable dentro del proyecto y conseguir ampliar nuestros conocimientos en el desarrollo de la  tecnología web.
+### 4. EL comando *curl*:
+Nuestro desconocimiento del comando curl, que también se utilizaba en Log2, nos hizo suspender la ruina más adelante. Hemos decidido hablar entre nosotros de todos modos en una futura reunión muy cercana para estudiar mejor y por nuestra cuenta cómo funcionaban las opciones individuales que teníamos que utilizar de la instrucción bash.
 
-### 3. Valoración de la exposición:
-Destacamos, que hemos asistido tres personas a la reunión cuando deberíamos haber sido cinco.
-Por esta razón en un origen cada uno se ha preparado el tema que le ha parecido (siguiendo la norma de que ninguna agrupación se quede sin ver) y el resto de temas los hemos debatido de forma común durante la reunón.
-| Agrupación 1 - Apartados Comunicación, Objetivos, Resolución de Problemas | Agrupación 2 - Apartados Expectativas, BrainStoriming | Agrupación 3 - Apartados Conflictos, Gestión de Conflictos |
-|:-------------------------------------------------------------------------:|:-----------------------------------------------------:|:----------------------------------------------------------:|
-| Sales García, Gabriel                                                    | Pomplio, Matteo                       | Sales García, Gabriel                                    |
-| Pomplio, Mattteo| Malerba, Alessio      | Malerba, Alessio                                      |
+### 5. Objetivos para la próxima reunión:
+**Las tareas a preparar para la siguiente sesión son:**
+- Estudio del funcionamento del comando de bash *curl*
+- Esperar que el profe nos conteste y discutir en el grupo whatsapp sobre que hacer sobre Log3
 
-Valoración de cada miembro: 
-#### Pomplio, Matteo:
-
+*Genova, 21/04/2022, Malerba Alessio*
