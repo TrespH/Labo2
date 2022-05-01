@@ -19,7 +19,18 @@ Para esto, hemos configurado la ruta del archivo "PrimeroMP" colocándolo en la 
         <param-name>Path</param-name>
         <param-value>/home/user/apache-tomcat-9.0.62/webapps/primeroMP/</param-value>
     </context-param>
-  
+
+En cuanto al código del servlet, en Log2.java utilizamos un método especial para encontrar la ruta del archivo, llamado getInitParameter. Esto fue una adición significativa al código java previamente escrito para Log0 y Log1, como puedes ver en el siguiente *snippet*:
+
+	response.setContentType("text/html");
+	String output = "";
+	String path = this.getServletContext().getInitParameter("Path") + "LOG2.txt";
+	PrintWriter out = response.getWriter();
+	String fechaHora =  LocalDateTime.now().toString();
+	String user = request.getParameter("user");
+	String password = request.getParameter("password");
+	String URI = request.getRequestURL() + request.getContextPath() + request.getServletPath() + request.getPathInfo();
+
 ### 3. Dudas sobre Log3:
 Log3 fue el que nos detuvo, ya que no pudimos entender bien qué significaba convertir un servlet en un filtro. Por eso hemos decidido de enviar un correo al profe explicando directamente nuestras dudas, ya que es posible que el trabajo sólo deba realizarse en el futuro con conocimientos que aún no poseemos
 
