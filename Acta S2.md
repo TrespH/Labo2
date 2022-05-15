@@ -1,4 +1,4 @@
-# Acta sesión 2: Pruebas con Curl
+# Acta sesión 2: Pruebas previas S3
 ## Información de la reunión.
 **Fecha:** 7 de Mayo del 2022
 
