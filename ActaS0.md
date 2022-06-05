@@ -12,8 +12,11 @@
 
 **Asistentes:**
 - Sales García, Gabriel
+
 - Malerba, Alessio
-- Pomplio, Matteo
+
+- Pompilio, Matteo
+
 
 ### 1. Resumen de la reunión:
 Hemos determinado todos los aspectos fundamentales para la organización y desarrollo de un "Trabajo en equipo", así como marcar los objetivos tanto para  del equipo como para cada miembro del mismo y ciertas reglas que deberemos cumplir para que todo fluya como se espera.

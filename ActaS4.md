@@ -9,11 +9,14 @@
 **Tipo de reunión:** Presencial
 
 **Asistentes:**
-- Sales García, Gabriel
-- Malerba, Alessio
-- Pomplio, Matteo
-- Lopez, Pablo
 
+- Sales García, Gabriel
+
+- Malerba, Alessio
+
+- Pompilio, Matteo
+
+- Lopez, Pablo
 
 
 ### 1. Resumen de la reunión:
@@ -26,26 +29,25 @@ En esta sesion lo que hemos hecho es seguir con las funciones que debe tener el 
 Una vez pasado el filtro de autenticación, ya estamos en la página donde el profesor podra ver las asignaturas que imparte con sus respectivas notas. 
 
 Cuando clique en una de las asignaturas que imparte, podra visualizar los alumnos que tiene en cada asignatura. 
-````
+```java
   out.println("<body>" + 
                 "<div class=\"row\">" + 
                 "<h1><b>Notas OnLine. </b>Alumnos de la asignatura " + acronimo + "</h1>" + 
-                "<p><b>Aqu� tienes sus alumnos</b></p>" + 
+                "<p><b>Aquí tienes sus alumnos</b></p>" + 
                 "</div><br><div>");
-
-````
+```
 
 
 Ésto lo consigue accediendo al servlet de ListaAlumnos; lo mostrará indicando su DNI, y abajo pondra la última nota que el profesor le ha puesto. Si no le ha modificado aún la nota mostrara un mensaje de "Sin calificar", y en cuanto la modifique, se actualizará con la nota deseada.
 
-````
+```java
  for (int i = 0; i < lista_alumnos_array.length(); i++) {
             JSONObject lista_alumnos_json = lista_alumnos_array.getJSONObject(i);
             String dni_alumno = lista_alumnos_json.getString("alumno");
             String nota = lista_alumnos_json.getString("nota");
             if(nota.length() == 0) {nota = "Sin calificar";}
             
-````
+```
 
 
 
@@ -56,7 +58,7 @@ clicara en el boton de "VAMOS!" con el que accedera al servlet Detalles para pod
 
 A continuación, se mostrará una página muy parecida a la mostrada al alumno, con la foto de la alumno, la información de éste y la información de la asignatura, pero además incluira el formulario donde podra actualizar la nota del alumno: 
 
-````
+```java
 if (session.getAttribute("rol").toString().equals("rolpro")) {
             out.println("<form action='ModificacionNotas' method='post'> <p> Introduzca la nueva nota(): "
                     + "<input type='hidden' name='dni' value='" + dni + "'/>"

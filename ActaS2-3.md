@@ -9,9 +9,13 @@
 **Tipo de reunión:** Presencial
 
 **Asistentes:**
+
 - Sales García, Gabriel
+
 - Malerba, Alessio
+
 - Pompilio, Matteo
+
 - Lopez, Pablo
 
 
@@ -19,7 +23,7 @@
 En esta sesión hemos desarrollado un escenario de inicio tanto para una alumna como para un profesor. Hemos creado un filtro de autentificación, que se encarga de generar una key para poder hacer las peticiones necesarias a la API de centro educativo y por último hemos creado las vistas asociadas a estas funcionalidades por medio de la plataforma boostrap, aunque mencionar que no son ni serán la versión final.
 Ambos escenarios presentan muchas similitudes pero también algunas diferencias que hemos podido entender durante esta sesión. 
 
-### 2. Filtro "Autentificador.java" :
+### 2. Filtro "Autentificador.java":
 La finalidad de este filtro es conseguir la autentificación web. Este apartado ya lo vimos en la pasada sesión de preparación pero ahora la idea es adaptarlo a nuestra aplicación. 
 Por defecto el filtro se activará cada vez que se llame a los servlets de "LoginAlumno" y "LoginPro". El resultado es la creación de una KEY necesaria para poder hacer las consultas a centro educativo. Se puede decir que la funcionalidad de este filtro es idéntica a la orden curl por la cual iniciabamos sesión. Una vez generada la KEY debemos guardarla como un parámetro de la sesión, básicamente para que pueda ser utilizada más adelante.
 La primera parte del código es igual a la autentificación que hicimos en la pasada sesión, por lo que solamente nos centramos en el código nuevo, que es la petición de la KEY y su posterior almacenaje.
@@ -97,32 +101,31 @@ A partir del objeto devuelto, hacemos un array de JSON y lo recorremos. Por cada
 
 ```java
 JSONArray array = new JSONArray(asignaturas);
-        for (int i = 0; i < array.length(); i++) {
-            JSONObject asignatura_json = array.getJSONObject(i);
-            String acronimo = asignatura_json.getString("asignatura");
-            
-            String detallesAsignaturas = executor.use(cookies)
-                    .execute(Request.get("http://" + url + ":9090/CentroEducativo/asignaturas/" + acronimo + "/?key=" + key))
-                    .returnContent().toString();
-            JSONObject detalles = new JSONObject(detallesAsignaturas);
-            String nombreD = detalles.getString("nombre");
-            
-            out.println("<form action='Asignaturas' method='GET'>"
-                    + "<h2>" + "<input type='submit' value='" + nombreD + "' name='" + acronimo + "'></form>" + "</h2>");
-        }
-        out.println("</div></div>" + 
-                "<div class=\"col-4\" id=\"nombres\">" + 
-                "<h3>Grupo 3TI12_G02</h3>" + 
-                "<ol>" + 
-                "<li>Sales Garcia, Gabriel</li>" + 
-                "<li>Malerba, Alessio</li>" + 
-                "<li>Pomplio, Matteo</li>" + 
-                "<li>Lopez, Pablo</li>" + 
-                "</ol></div></div><br>" +
-                "<div id=\"abajo\">" + 
-                "<p>Trabajo en grupo realizado por el grupo 3TI12_G2 en el curso DEW 2021/2022</p>" + 
-                "</div></body></html>");
-    }
+for (int i = 0; i < array.length(); i++) {
+        JSONObject asignatura_json = array.getJSONObject(i);
+        String acronimo = asignatura_json.getString("asignatura");
+        
+        String detallesAsignaturas = executor.use(cookies)
+                .execute(Request.get("http://" + url + ":9090/CentroEducativo/asignaturas/" + acronimo + "/?key=" + key))
+                .returnContent().toString();
+        JSONObject detalles = new JSONObject(detallesAsignaturas);
+        String nombreD = detalles.getString("nombre");
+        
+        out.println("<form action='Asignaturas' method='GET'>"
+                + "<h2>" + "<input type='submit' value='" + nombreD + "' name='" + acronimo + "'></form>" + "</h2>");
+}
+out.println("</div></div>" + 
+        "<div class=\"col-4\" id=\"nombres\">" + 
+        "<h3>Grupo 3TI12_G02</h3>" + 
+        "<ol>" + 
+        "<li>Sales Garcia, Gabriel</li>" + 
+        "<li>Malerba, Alessio</li>" + 
+        "<li>Pomplio, Matteo</li>" + 
+        "<li>Lopez, Pablo</li>" + 
+        "</ol></div></div><br>" +
+        "<div id=\"abajo\">" + 
+        "<p>Trabajo en grupo realizado por el grupo 3TI12_G2 en el curso DEW 2021/2022</p>" + 
+        "</div></body></html>");
 ```	
 Destacamos esta última parte, donde ponenmos nuestros nomvre y nombre de grupo.
 
@@ -134,6 +137,7 @@ sesionprof.setAttribute("rol", "rolpro");
 ```
 Y no hacemos una petición para detalles asignatura. El profesor solamente quiere ver las asignaturas que imparte, no tiene ninguna nota asociada por lo que no necesita ver más.
 Destacamos que no hemos podido añadir ningun profesor porque no podiamos pasar el filtro. Los profesores nos pone en el documento que no tienen una password asociada. Entonces no podemos generar la KEY.
+
 ### 5. Objetivos para la próxima reunión:
 - Organizar el trabajo para poder entregar este segundo hito.
 

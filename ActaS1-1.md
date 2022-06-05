@@ -15,6 +15,8 @@
 Sales García, Gabriel
 
 Pompilio, Matteo
+
+
 ### 1. Resumen de la reunión:
 Hemos creado un proyecto web dinámico en el cual se han creados 2 Servelts (Log0, Log1), donde Log1 está basado en evoluciónes de las funcionalidades de Log0: para cada Servlet vamos a mostrar como hemos resuelto el problema requerido.
 Además, el desarrollo de una pagina *index.html*, desde la cual es posible inserir los datos del usuario (username y password) para cada Servlet diferente, así que este pueda recibir los 2 datos y eventualmente procesarlos.

@@ -11,9 +11,13 @@
 **Plataforma:** Discord
 
 **Asistentes:**
+
 - Sales García, Gabriel
+
 - Lopez, Pablo
+
 - Pompilio, Matteo
+
 
 ## Resumen de la reunión:
 Hemos testado las funcionalidades del plugin RESTED para Firefox y en segundo lugar hemos creado un servlet para explorar el API *TheCatAPI*
