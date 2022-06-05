@@ -88,4 +88,4 @@ $.ajax({   \r\n"
 
 En la ultima sesion, queremos crear un servlet para poder cerrar sesion. 
 
-Valencia, 11/04/2022, Gabriel Sales García
+Valencia, 1/06/2022, Pablo López Honrubia
