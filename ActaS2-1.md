@@ -1,6 +1,6 @@
-# Acta sesión 2: Pruebas con Curl
-## Información de la reunión.
-**Fecha:** 25 de Abril del 2022
+# Acta 1 sesión 2: Pruebas con Curl
+### Información de la reunión.
+**Fecha:** 25/04/2022
 
 **Hora:** 17:30h
 
@@ -11,9 +11,12 @@
 **Plataforma:** Discord
 
 **Asistentes:**
+
 - Sales García ,Gabriel
+
 - Malerba, Alessio
-- Pomplio, Matteo
+
+- Pompilio, Matteo
 
 ## Resumen de la reunión:
 En última reunión hemos desarrollado la última parte del primer hito. Esta consta de la interacción con la API rest   "centroEducativo"por medio de órdenes "Curl". También hemos fijado las tareas necesarias para la siguiente reunión y hemos determinado como se hará la entrega del hito 1.

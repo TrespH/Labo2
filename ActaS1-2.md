@@ -1,14 +1,24 @@
-# Acta 1 sesión 2 : Log2 y primeras dudas.
+# Acta 2 sesión 1 : Log2 y primeras dudas.
 ### Información de la reunión:
 **Fecha:**  21/04/2022
+
 **Hora:**  17:30 h
+
 **Identificador del grupo:** 3ti21_G2
+
 **Tipo de reunión:** Online
+
 **Plataforma:** Discord
+
 **Asistentes:**
-Sales García, Gabrielh
+
+Sales García, Gabriel
+
 Malerba, Alessio
+
 Pompilio, Matteo
+
+
 ### 1. Resumen de la reunión:
 Hemos continuado con las partes restantes de la sesión 1. Habiendo completado ya Log0 y Log1, hemos implementado una versión para Log2. El trabajo prosiguió sin obstáculos, pero luego tuvimos un pequeño problema con las partes restantes, a saber, Log3 y los comandos curl de prueba. 
 
