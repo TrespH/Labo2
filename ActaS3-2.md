@@ -1,4 +1,4 @@
-# Acta sesión 4: Modificar Nota
+# Acta 2 sesión 3: Modificar Nota
 ### Información de la reunión:
 **Fecha:**  01/06/2022
 
