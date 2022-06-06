@@ -25,7 +25,23 @@ Tenemos una aplicación en la que interactúan 3 niveles:
 
 ## <span style = "color: #00a3e8"> Índice </span>
 
-
+1. [Información del equipo](#item1)
+2. [Partes significativas del código](#item2)
+3. [Interacciones con AJAX](#item3)
+4. [Cómo se insertan las informaciones en las páginas?](#item4)
+5. [Anotaciones de accesos](#item5)
+6. [Anexo: Actas Hito 1](#item6)
+    6.1 [Acta Sesion 0](#item6.1)
+    6.2 [Acta 1 Sesion 1](#item6.2)
+    6.3 [Acta 2 Sesion 1](#item6.3)
+7. [Anexo: Actas Hito 2](#item7)
+    7.1 [Acta 1 Sesion 2](#item7.1)
+    7.2 [Acta 2 Sesion 2](#item7.2)
+    7.3 [Acta 3 Sesion 2](#item7.3)
+8. [Anexo: Actas Hito 3](#item8)
+    8.1 [Acta 1 Sesion 3](#item8.1)
+    8.2 [Acta 2 Sesion 3](#item8.2)
+    8.3 [Acta 3 Sesion 3](#item8.3)
 
 ## <span style = "color: #00a3e8"> 1. Información del equipo</span>
 
@@ -275,9 +291,8 @@ Valoración de cada miembro:
 
 Valencia, 11/04/2022, Gabriel Sales García
 
-## <span style = "color: #00a3e8"> 6. Anexo: Actas Hito 1</span>
 
-## <span style = "color: #00a3e8"> 6.2. Acta Sesion 1</span>
+## <span style = "color: #00a3e8"> 6.2. Acta 1 Sesion 1</span>
 
 # Acta 1 sesión 1 : Creación de los primeros Logs
 ### Información de la reunión:
@@ -745,7 +760,7 @@ Valencia, 11/05/2022, Lopez Honrubia Pablo
 
 ## <span style = "color: #00a3e8"> 8. Anexo: Actas Hito 3</span>
 
-## <span style = "color: #00a3e8"> 8.2 Acta 1 Sesion 3</span>
+## <span style = "color: #00a3e8"> 8.1 Acta 1 Sesion 3</span>
 
 # Acta 1 sesión 3: Detalles de los alumnos 
 ## Información de la reunión.
@@ -892,7 +907,7 @@ En la siguiente sesión, pretendemos realizar el servlet para que el profesor pu
 
 
 
-## <span style = "color: #00a3e8"> 8.1 Acta 2 Sesion 3</span>
+## <span style = "color: #00a3e8"> 8.2 Acta 2 Sesion 3</span>
 
 # Acta 2 sesión 3: Modificar Nota
 ### Información de la reunión:
