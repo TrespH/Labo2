@@ -1,0 +1,42 @@
+#titulo {
+	color: black;
+	background-color: #AED6F1;
+	text-align: center;
+	border-radius: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#CS {
+	text-align: right;
+}
+
+#profesor {
+	margin-top: 50px;
+}
+
+#descripcion {
+	margin-left: 2%;
+}
+
+#inicios {
+	margin-left: 2%;
+}
+
+#nombres {
+	background-color: #AED6F1;
+}
+
+#abajo {
+	margin-left: 2%;
+	margin-top: 200px;
+}
+
+#expediente {
+	margin-left: 2%;
+}
+
+#atras {
+	margin-top: 10%;
+}

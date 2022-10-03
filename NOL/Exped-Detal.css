@@ -1,0 +1,62 @@
+#titulo {
+	color: black;
+	background-color: #AED6F1;
+	text-align: center;
+	border-radius: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#titulo2 {
+	color: black;
+	background-color: #d897eb;
+	text-align: center;
+	border-radius: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#abajo {
+	margin-left: 2%;
+	margin-top: 80px;
+}
+
+#expediente {
+	margin-left: 2%;
+}
+
+#atras {
+	margin-top: 10%;
+}
+
+#loremipsum {
+	margin-top: 2%;
+}
+
+#exp_datos {
+	margin-top: 2%;
+	margin-left: 40%;
+}
+
+.fotos {
+	border-style: solid;
+	border-width: 4px;
+	border-color: rgb(0, 0, 0);
+	border-radius: 98%;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.xbootstrap {
+	color: #202020;
+	letter-spacing: .1em;
+	text-shadow: -1px -1px 1px rgb(180, 167, 167), 2px 2px 1px #9f9494;
+}
